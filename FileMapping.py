@@ -47,8 +47,8 @@ def ext_desc(ext):
         pass
     return desc
 
-def generate_index(path=None, max=0):
-    # stops generating index whenever there are more than 500 records, to test if the script works
+def generate_index(path=None, max=100):
+    # stops generating index whenever there are more than 100 records, to test if the script works
     # use 'max=0' to generate the full index
     
     path = path if path else tkfd.askdirectory() # Request path if not provided
